@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(65, 25, 130);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 1fr 60px;
+    grid-template-areas: 
+    "hd"
+    "mn"
+    "ft";
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: hd;
+}
+
+header h1 {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+button {
+    background-color: green;
+    border-radius: 10%;
+}
+
+span {
+    color: orange;
+}
+
+hr {
+    width: 80%;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+
+
+.main {
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "main"
+        "side";
+}
+
+.sidebar {
+    display: flex;
+    justify-content: space-around;
+    grid-area: side;
+}
+
+.about {
+    display: none;
+}
+
+.text {
+    padding: 0.5em;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.inner-link {
+    width: fit-content;
+}
+
+article{
+    border: 1px solid black;
+    border-radius: 2%;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px rgb(153, 66, 141);
+    margin: 20px;
+}
+
+p {
+    color: white;
+}
+
+article:hover, article:active {
+    box-shadow: 10px 10px 10px rgb(90, 17, 158);
+}
+
+.quote {
+    border: 1px solid black;
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white
+}
+
+li {
+    list-style-type: none;
+    padding: 0.2em;
+}
+
+li a{
+    display: inline;
+    color: orange;
+}
+
+footer p {
+    color: orange;
+}
