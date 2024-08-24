@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: hd;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+h3 {
+    color: greenyellow;
+}
+
+.title {
+    text-decoration: none;
+}
+
+button {
+    background-color: green;
+    border-radius: 10%;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+.read-more{
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+span {
+    color: orange;
+}
+
+hr {
+    width: 80%;
+}

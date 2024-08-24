@@ -1,3 +1,7 @@
+@import url("header.css");
+@import url("sidebar.css");
+@import url("main.css");
+
 body {
     background-color: rgb(65, 25, 130);
     display: grid;
@@ -10,107 +14,104 @@ body {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-area: hd;
+@media screen and (min-width: 649px) {
+    .homePost-image img {
+        margin-top: -70px;
+    }
 }
 
-header h1 {
-    text-decoration: underline;
-    color: greenyellow;
+@media screen and (min-width: 803px) {
+    .homePost-image img {
+        margin-top: -95px;
+    }
 }
 
-button {
-    background-color: green;
-    border-radius: 10%;
+@media screen and (min-width: 986px) {
+    .homePost-image img {
+        margin-top: -105px;
+    }
 }
 
-span {
-    color: orange;
+@media screen and (min-width: 1017px) {
+    .homePost-image img {
+        margin-top: -115px;
+    }
 }
 
-hr {
-    width: 80%;
-}
+@media screen and (min-width: 1228px) {
 
-h2 {
-    color: greenyellow;
-}
+    body {
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40px 1fr 20px;
+        grid-template-areas:
+            "hd hd hd hd"
+            "mn mn mn mn"
+            "ft ft ft ft";
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: hd;
+    }
+    
+    .main {
+        border: 2px sold black;
+        grid-area: mn;
+        display: grid;
+        grid-template-columns: 1fr 260px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "main side"
+    }
+    
+    .main-content {
+        grid-area: main;
+    }
+    
+    .sidebar {
+        grid-area: side;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 1.5em;
+    }
+    
+    .about {
+        display: contents;
+    }
+    
+    article {
+        border: none;
+        box-shadow: none;
+    
+    }
+    
+    article:hover, article:active {
+        box-shadow: none;
+    }
+    
+    
+    .quote {
+        border: 1px solid black;
+    }
+    
+    footer {
+        grid-area: ft;
+    }
 
+    .homePost-image img {
+        margin-top: -15px;
+    }
+    }
 
-
-.main {
-    grid-area: mn;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "main"
-        "side";
-}
-
-.sidebar {
-    display: flex;
-    justify-content: space-around;
-    grid-area: side;
-}
-
-.about {
-    display: none;
-}
-
-.text {
-    padding: 0.5em;
-}
-
-a {
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-
-.inner-link {
-    width: fit-content;
-}
-
-article{
-    border: 1px solid black;
-    border-radius: 2%;
-    background-color: purple;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 10px 10px 10px rgb(153, 66, 141);
-    margin: 20px;
-}
-
-p {
-    color: white;
-}
-
-article:hover, article:active {
-    box-shadow: 10px 10px 10px rgb(90, 17, 158);
-}
-
-.quote {
-    border: 1px solid black;
-    width: 89%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white
-}
-
-li {
-    list-style-type: none;
-    padding: 0.2em;
-}
-
-li a{
-    display: inline;
-    color: orange;
-}
-
-footer p {
-    color: orange;
-}
+    @media screen and (min-width: 1464px) {
+        .homePost-image img {
+            margin-top: -65px;
+        }
+    }
